@@ -55,6 +55,12 @@ class MyApp extends StatelessWidget {
             borderRadius: BorderRadius.circular(5),
             borderSide: BorderSide(color: Colors.transparent, width: 1)
         ),
+      ),
+      drawerTheme: DrawerThemeData(
+        backgroundColor: Color(0xff274257),
+        endShape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(7)
+        )
       )
     );
   }

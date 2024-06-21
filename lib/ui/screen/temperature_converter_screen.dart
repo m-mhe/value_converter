@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:value_converter/ui/widget/appDrawer.dart';
 import 'package:value_converter/ui/widget/common_app_bar.dart';
 
 class TemperatureConverterScreen extends StatelessWidget {
@@ -9,6 +10,7 @@ class TemperatureConverterScreen extends StatelessWidget {
     return Scaffold(
       appBar: commonAppBar(
           screenTitle: 'Temperature Converter', child: Icon(Icons.thermostat)),
+      endDrawer: AppDrawer(),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.symmetric(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:value_converter/ui/screen/home_navigator_screen.dart';
+import 'package:value_converter/ui/widget/app_color.dart';
 import 'package:value_converter/ui/widget/app_theme.dart';
 
 class MyApp extends StatelessWidget {
@@ -20,16 +21,16 @@ class MyApp extends StatelessWidget {
   ThemeData darkTheme() {
     return ThemeData(
       appBarTheme: AppBarTheme(
-        backgroundColor: Color(0xff274257),
-        foregroundColor: Color(0xffC6CDD2),
+        backgroundColor: AppColor.secondaryColor,
+        foregroundColor: AppColor.primaryColor,
         centerTitle: true,
-        titleTextStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.w600, color: Color(0xffC6CDD2))
+        titleTextStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.w600, color: AppColor.primaryColor)
       ),
-      scaffoldBackgroundColor: Color(0xffC6CDD2),
+      scaffoldBackgroundColor: AppColor.primaryColor,
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
-          backgroundColor: Color(0xff274257),
-          foregroundColor: Color(0xffC6CDD2),
+          backgroundColor: AppColor.thirdColor,
+          foregroundColor: AppColor.primaryColor,
           textStyle: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(7)
@@ -38,18 +39,28 @@ class MyApp extends StatelessWidget {
       ),
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
-        fillColor: Color(0xffC6CDD2),
+        fillColor: AppColor.thirdColor,
         labelStyle: TextStyle(
-          color: Color(0xff274257),
+          color: AppColor.primaryColor,
           fontWeight: FontWeight.w600
         ),
         hintStyle: TextStyle(
-            color: Color(0xff274257),
+            color: AppColor.primaryColor,
             fontWeight: FontWeight.w500
+        ),
+        prefixStyle: TextStyle(
+            color: AppColor.primaryColor,
+            fontWeight: FontWeight.w500,
+          fontSize: 16,
+        ),
+        suffixStyle: TextStyle(
+            color: AppColor.primaryColor,
+            fontWeight: FontWeight.w500,
+          fontSize: 16,
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(5),
-          borderSide: BorderSide(color: Color(0xff8B9DB0), width: 2)
+          borderSide: BorderSide(color: AppColor.primaryColor, width: 1)
         ),
         focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(5),
@@ -57,7 +68,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       drawerTheme: DrawerThemeData(
-        backgroundColor: Color(0xff274257),
+        backgroundColor: AppColor.thirdColor,
         endShape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(7)
         )

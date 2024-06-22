@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:value_converter/ui/widget/appDrawer.dart';
 import 'package:value_converter/ui/widget/common_app_bar.dart';
 
+import '../widget/app_color.dart';
+
 class TemperatureConverterScreen extends StatelessWidget {
   TemperatureConverterScreen({super.key});
 
@@ -22,7 +24,7 @@ class TemperatureConverterScreen extends StatelessWidget {
                 height: MediaQuery.sizeOf(context).height / 7,
                 width: MediaQuery.sizeOf(context).width / 1,
                 decoration: BoxDecoration(
-                    color: Color(0xff274257),
+                    color: AppColor.accentColor,
                     borderRadius: BorderRadius.circular(7)),
                 child: Center(
                   child: Padding(
@@ -33,7 +35,7 @@ class TemperatureConverterScreen extends StatelessWidget {
                       keyboardType: TextInputType.number,
                       onChanged: _onCalChange,
                       style: TextStyle(
-                          color: Color(0xff274257),
+                          color: AppColor.primaryColor,
                           fontWeight: FontWeight.w500),
                       decoration: InputDecoration(
                           hintText: 'Enter Celsius value', labelText: '°C', suffixText: '°C',),
@@ -48,7 +50,7 @@ class TemperatureConverterScreen extends StatelessWidget {
                 height: MediaQuery.sizeOf(context).height / 7,
                 width: MediaQuery.sizeOf(context).width / 1,
                 decoration: BoxDecoration(
-                    color: Color(0xff274257),
+                    color: AppColor.accentColor,
                     borderRadius: BorderRadius.circular(7)),
                 child: Center(
                   child: Padding(
@@ -59,7 +61,7 @@ class TemperatureConverterScreen extends StatelessWidget {
                       keyboardType: TextInputType.number,
                       onChanged: _onFahChange,
                       style: TextStyle(
-                          color: Color(0xff274257),
+                          color: AppColor.primaryColor,
                           fontWeight: FontWeight.w500),
                       decoration: InputDecoration(
                           hintText: 'Enter Fahrenheit value', labelText: '°F', suffixText: '°F',),
@@ -74,7 +76,7 @@ class TemperatureConverterScreen extends StatelessWidget {
                 height: MediaQuery.sizeOf(context).height / 7,
                 width: MediaQuery.sizeOf(context).width / 1,
                 decoration: BoxDecoration(
-                    color: Color(0xff274257),
+                    color: AppColor.accentColor,
                     borderRadius: BorderRadius.circular(7)),
                 child: Center(
                   child: Padding(
@@ -85,7 +87,7 @@ class TemperatureConverterScreen extends StatelessWidget {
                       keyboardType: TextInputType.number,
                       onChanged: _onKalChange,
                       style: TextStyle(
-                          color: Color(0xff274257),
+                          color: AppColor.primaryColor,
                           fontWeight: FontWeight.w500),
                       decoration: InputDecoration(
                           hintText: 'Enter Kelvin value', labelText: '°K', suffixText: '°K',),

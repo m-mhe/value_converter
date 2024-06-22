@@ -49,7 +49,7 @@ class AppDrawer extends StatelessWidget {
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
-                        fontSize: 16),
+                        fontSize: 14),
                   ),
                 ),
               ),
@@ -69,7 +69,7 @@ class AppDrawer extends StatelessWidget {
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
-                        fontSize: 16),
+                        fontSize: 14),
                   ),
                 ),
               ),
@@ -87,7 +87,7 @@ class AppDrawer extends StatelessWidget {
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
-                        fontSize: 16),
+                        fontSize: 14),
                   ),
                 ),
               ),
@@ -105,7 +105,7 @@ class AppDrawer extends StatelessWidget {
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
-                        fontSize: 16),
+                        fontSize: 14),
                   ),
                 ),
               ),
@@ -123,7 +123,7 @@ class AppDrawer extends StatelessWidget {
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
-                        fontSize: 16),
+                        fontSize: 14),
                   ),
                 ),
               ),
@@ -141,7 +141,7 @@ class AppDrawer extends StatelessWidget {
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
-                        fontSize: 16),
+                        fontSize: 14),
                   ),
                 ),
               ),
@@ -159,7 +159,7 @@ class AppDrawer extends StatelessWidget {
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
-                        fontSize: 16),
+                        fontSize: 14),
                   ),
                 ),
               ),
@@ -177,7 +177,7 @@ class AppDrawer extends StatelessWidget {
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
-                        fontSize: 16),
+                        fontSize: 14),
                   ),
                 ),
               ),
@@ -195,7 +195,7 @@ class AppDrawer extends StatelessWidget {
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
-                        fontSize: 16),
+                        fontSize: 14),
                   ),
                 ),
               ),
@@ -213,7 +213,7 @@ class AppDrawer extends StatelessWidget {
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
-                        fontSize: 16),
+                        fontSize: 14),
                   ),
                 ),
               ),
@@ -231,7 +231,7 @@ class AppDrawer extends StatelessWidget {
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
-                        fontSize: 16),
+                        fontSize: 14),
                   ),
                 ),
               ),
@@ -249,7 +249,7 @@ class AppDrawer extends StatelessWidget {
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
-                        fontSize: 16),
+                        fontSize: 14),
                   ),
                 ),
               ),
@@ -267,7 +267,7 @@ class AppDrawer extends StatelessWidget {
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
-                        fontSize: 16),
+                        fontSize: 14),
                   ),
                 ),
               ),
@@ -285,7 +285,7 @@ class AppDrawer extends StatelessWidget {
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
-                        fontSize: 16),
+                        fontSize: 14),
                   ),
                 ),
               ),
@@ -303,7 +303,7 @@ class AppDrawer extends StatelessWidget {
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
-                        fontSize: 16),
+                        fontSize: 14),
                   ),
                 ),
               ),

@@ -29,8 +29,8 @@ class MyApp extends StatelessWidget {
       scaffoldBackgroundColor: AppColor.primaryColor,
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
-          backgroundColor: AppColor.thirdColor,
-          foregroundColor: AppColor.primaryColor,
+          backgroundColor: AppColor.secondaryColor,
+          foregroundColor: AppColor.accentColor,
           textStyle: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(7)
@@ -72,6 +72,11 @@ class MyApp extends StatelessWidget {
         endShape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(7)
         )
+      ),
+      bottomNavigationBarTheme: BottomNavigationBarThemeData(
+        backgroundColor: AppColor.secondaryColor,
+        selectedItemColor: AppColor.accentColor,
+        unselectedItemColor: AppColor.primaryColor
       )
     );
   }

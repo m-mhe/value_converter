@@ -12,6 +12,7 @@ class PercentageScreenBottomNavigationBar extends StatefulWidget {
 
 class _PercentageScreenBottomNavigationBarState
     extends State<PercentageScreenBottomNavigationBar> {
+  int selectIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,10 +22,16 @@ class _PercentageScreenBottomNavigationBarState
       ),
       endDrawer: AppDrawer(),
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: selectIndex,
+        onTap: (i){
+          setState(() {
+            selectIndex = i;
+          });
+        },
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.abc), label: ''),
-          BottomNavigationBarItem(icon: Icon(Icons.abc), label: ''),
-          BottomNavigationBarItem(icon: Icon(Icons.abc), label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.percent), label: 'Percent'),
+          BottomNavigationBarItem(icon: Icon(Icons.join_left), label: 'Net'),
+          BottomNavigationBarItem(icon: Icon(Icons.join_full), label: 'Total'),
         ],
       ),
     );

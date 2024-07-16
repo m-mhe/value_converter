@@ -80,6 +80,7 @@ class NetScreen extends StatelessWidget {
                     child: TextField(
                       controller: _percentageTEC,
                       enabled: true,
+                      keyboardType: TextInputType.number,
                       onChanged: _onPercentChange,
                       style: TextStyle(
                           color: AppColor.primaryColor,

@@ -3,6 +3,8 @@ import 'package:value_converter/ui/screen/temperature_converter_screen.dart';
 import 'package:value_converter/ui/widget/common_app_bar.dart';
 import 'package:value_converter/ui/widget/percentage_screen_bottom_navigation_bar.dart';
 
+import 'length_units.dart';
+
 class HomeNavigatorScreen extends StatelessWidget {
   const HomeNavigatorScreen({super.key});
 
@@ -11,7 +13,7 @@ class HomeNavigatorScreen extends StatelessWidget {
     return Scaffold(
       appBar: commonAppBar(
         screenTitle: 'Value Converter',
-        child: const Icon(Icons.calculate_outlined),
+        child: const Icon(Icons.calculate),
       ),
       body: Padding(
         padding: EdgeInsets.all(MediaQuery.sizeOf(context).width / 37),
@@ -30,7 +32,7 @@ class HomeNavigatorScreen extends StatelessWidget {
                     MaterialPageRoute(
                         builder: (context) => TemperatureConverterScreen()));
               },
-              child: Icon(Icons.thermostat),
+              child: const Icon(Icons.thermostat),
             ),
             ElevatedButton(
               onPressed: () {
@@ -38,17 +40,24 @@ class HomeNavigatorScreen extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                         builder: (context) =>
-                            PercentageScreenBottomNavigationBar()));
+                            const PercentageScreenBottomNavigationBar()));
               },
-              child: Icon(Icons.percent),
+              child: const Icon(Icons.percent),
             ),
             ElevatedButton(
               onPressed: () {},
-              child: Icon(Icons.currency_exchange),
+              child: const Icon(Icons.currency_exchange),
             ),
             ElevatedButton(
-              onPressed: () {},
-              child: Text('Length'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => LengthUnits(),
+                  ),
+                );
+              },
+              child: const Text('Length'),
             ),
             ElevatedButton(
               onPressed: () {},

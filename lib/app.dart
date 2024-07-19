@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
 
   ThemeData darkTheme() {
     return ThemeData(
-      appBarTheme: AppBarTheme(
+      appBarTheme: const AppBarTheme(
         backgroundColor: AppColor.secondaryColor,
         foregroundColor: AppColor.primaryColor,
         centerTitle: true,
@@ -39,10 +39,11 @@ class MyApp extends StatelessWidget {
       ),
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
+        isDense: true,//This line of code will reduce undercut.
         fillColor: AppColor.thirdColor,
         labelStyle: TextStyle(
           color: AppColor.primaryColor,
-          fontWeight: FontWeight.w600
+          fontWeight: FontWeight.w500
         ),
         hintStyle: TextStyle(
             color: AppColor.primaryColor,

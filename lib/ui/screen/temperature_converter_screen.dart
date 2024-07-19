@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:value_converter/ui/widget/appDrawer.dart';
+import 'package:value_converter/ui/widget/common_app_drawer.dart';
 import 'package:value_converter/ui/widget/common_app_bar.dart';
 
 import '../widget/app_color.dart';
@@ -12,16 +12,16 @@ class TemperatureConverterScreen extends StatelessWidget {
     return Scaffold(
       appBar: commonAppBar(
           screenTitle: 'Temperature Converter', child: Icon(Icons.thermostat)),
-      endDrawer: AppDrawer(),
+      endDrawer: const CommonAppDrawer(),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.symmetric(
               horizontal: MediaQuery.sizeOf(context).width / 25,
-              vertical: MediaQuery.sizeOf(context).height / 7),
+              vertical: MediaQuery.sizeOf(context).height / 5),
           child: Column(
             children: [
               Container(
-                height: MediaQuery.sizeOf(context).height / 7,
+                height: 90,
                 width: MediaQuery.sizeOf(context).width / 1,
                 decoration: BoxDecoration(
                     color: AppColor.accentColor,
@@ -47,7 +47,7 @@ class TemperatureConverterScreen extends StatelessWidget {
                 height: 10,
               ),
               Container(
-                height: MediaQuery.sizeOf(context).height / 7,
+                height: 90,
                 width: MediaQuery.sizeOf(context).width / 1,
                 decoration: BoxDecoration(
                     color: AppColor.accentColor,
@@ -73,7 +73,7 @@ class TemperatureConverterScreen extends StatelessWidget {
                 height: 10,
               ),
               Container(
-                height: MediaQuery.sizeOf(context).height / 7,
+                height: 90,
                 width: MediaQuery.sizeOf(context).width / 1,
                 decoration: BoxDecoration(
                     color: AppColor.accentColor,

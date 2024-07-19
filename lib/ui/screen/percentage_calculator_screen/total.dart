@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:value_converter/ui/widget/appDrawer.dart';
+import 'package:value_converter/ui/widget/common_app_drawer.dart';
 import 'package:value_converter/ui/widget/common_app_bar.dart';
 
 import '../../widget/app_color.dart';
@@ -13,11 +13,11 @@ class TotalScreen extends StatelessWidget {
         child: Padding(
           padding: EdgeInsets.symmetric(
               horizontal: MediaQuery.sizeOf(context).width / 25,
-              vertical: MediaQuery.sizeOf(context).height / 7),
+              vertical: MediaQuery.sizeOf(context).height / 5),
           child: Column(
             children: [
               Container(
-                height: MediaQuery.sizeOf(context).height / 7,
+                height: 90,
                 width: MediaQuery.sizeOf(context).width / 1,
                 decoration: BoxDecoration(
                     color: AppColor.accentColor,
@@ -42,7 +42,39 @@ class TotalScreen extends StatelessWidget {
                 height: 10,
               ),
               Container(
-                height: MediaQuery.sizeOf(context).height / 7,
+                height: 90,
+                width: MediaQuery.sizeOf(context).width / 1,
+                decoration: BoxDecoration(
+                    color: AppColor.accentColor,
+                    borderRadius: BorderRadius.circular(7)),
+                child: Center(
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(
+                        horizontal: MediaQuery.sizeOf(context).width / 17),
+                    child: TextField(
+                      controller: _netTEC,
+                      keyboardType: TextInputType.number,
+                      onChanged: _onNetChange,
+                      style: TextStyle(
+                          color: AppColor.primaryColor,
+                          fontWeight: FontWeight.w500),
+                      decoration: InputDecoration(
+                        hintText: 'Enter Net value', label: Row(
+                          children: [
+                            Icon(Icons.join_left, color: AppColor.primaryColor,),
+                            SizedBox(width: 5,),
+                            Text('Enter Net value...',),
+                          ],
+                        ), suffixText: 'Net',),
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                height: 90,
                 width: MediaQuery.sizeOf(context).width / 1,
                 decoration: BoxDecoration(
                     color: AppColor.accentColor,
@@ -60,33 +92,13 @@ class TotalScreen extends StatelessWidget {
                           color: AppColor.primaryColor,
                           fontWeight: FontWeight.w500),
                       decoration: InputDecoration(
-                        hintText: 'Percentage', label: Icon(Icons.percent, color: AppColor.primaryColor,), suffixText: '%',),
-                    ),
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Container(
-                height: MediaQuery.sizeOf(context).height / 7,
-                width: MediaQuery.sizeOf(context).width / 1,
-                decoration: BoxDecoration(
-                    color: AppColor.accentColor,
-                    borderRadius: BorderRadius.circular(7)),
-                child: Center(
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(
-                        horizontal: MediaQuery.sizeOf(context).width / 17),
-                    child: TextField(
-                      controller: _netTEC,
-                      keyboardType: TextInputType.number,
-                      onChanged: _onNetChange,
-                      style: TextStyle(
-                          color: AppColor.primaryColor,
-                          fontWeight: FontWeight.w500),
-                      decoration: InputDecoration(
-                        hintText: 'Enter Net value', label: Icon(Icons.join_left, color: AppColor.primaryColor,), suffixText: 'Net',),
+                        hintText: 'Percentage', label: Row(
+                          children: [
+                            Icon(Icons.percent, color: AppColor.primaryColor,),
+                            SizedBox(width: 5,),
+                            Text('Enter Percentage...',),
+                          ],
+                        ), suffixText: '%',),
                     ),
                   ),
                 ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:value_converter/ui/widget/appDrawer.dart';
+import 'package:value_converter/ui/widget/common_app_drawer.dart';
 import 'package:value_converter/ui/widget/common_app_bar.dart';
 
 import '../../widget/app_color.dart';
@@ -13,11 +13,11 @@ class NetScreen extends StatelessWidget {
         child: Padding(
           padding: EdgeInsets.symmetric(
               horizontal: MediaQuery.sizeOf(context).width / 25,
-              vertical: MediaQuery.sizeOf(context).height / 7),
+              vertical: MediaQuery.sizeOf(context).height / 5),
           child: Column(
             children: [
               Container(
-                height: MediaQuery.sizeOf(context).height / 7,
+                height: 90,
                 width: MediaQuery.sizeOf(context).width / 1,
                 decoration: BoxDecoration(
                     color: AppColor.accentColor,
@@ -42,7 +42,7 @@ class NetScreen extends StatelessWidget {
                 height: 10,
               ),
               Container(
-                height: MediaQuery.sizeOf(context).height / 7,
+                height: 90,
                 width: MediaQuery.sizeOf(context).width / 1,
                 decoration: BoxDecoration(
                     color: AppColor.accentColor,
@@ -59,7 +59,13 @@ class NetScreen extends StatelessWidget {
                           color: AppColor.primaryColor,
                           fontWeight: FontWeight.w500),
                       decoration: InputDecoration(
-                        hintText: 'Enter Total value', label: Icon(Icons.join_full, color: AppColor.primaryColor,), suffixText: 'Total',),
+                        hintText: 'Enter Total value', label: Row(
+                          children: [
+                            Icon(Icons.join_full, color: AppColor.primaryColor,),
+                            SizedBox(width: 5,),
+                            Text('Enter Total value...',),
+                          ],
+                        ), suffixText: 'Total',),
                     ),
                   ),
                 ),
@@ -68,7 +74,7 @@ class NetScreen extends StatelessWidget {
                 height: 10,
               ),
               Container(
-                height: MediaQuery.sizeOf(context).height / 7,
+                height: 90,
                 width: MediaQuery.sizeOf(context).width / 1,
                 decoration: BoxDecoration(
                     color: AppColor.accentColor,
@@ -82,11 +88,17 @@ class NetScreen extends StatelessWidget {
                       enabled: true,
                       keyboardType: TextInputType.number,
                       onChanged: _onPercentChange,
-                      style: TextStyle(
+                      style: const TextStyle(
                           color: AppColor.primaryColor,
                           fontWeight: FontWeight.w500),
-                      decoration: InputDecoration(
-                        hintText: 'Percentage', label: Icon(Icons.percent, color: AppColor.primaryColor,), suffixText: '%',),
+                      decoration: const InputDecoration(
+                        hintText: 'Percentage', label: Row(
+                          children: [
+                            Icon(Icons.percent, color: AppColor.primaryColor,),
+                            SizedBox(width: 5,),
+                            Text('Set Percentage...',),
+                          ],
+                        ), suffixText: '%',),
                     ),
                   ),
                 ),

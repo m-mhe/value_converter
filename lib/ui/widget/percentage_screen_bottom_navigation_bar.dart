@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:value_converter/ui/screen/percentage_calculator_screen/net.dart';
 import 'package:value_converter/ui/screen/percentage_calculator_screen/percent.dart';
 import 'package:value_converter/ui/screen/percentage_calculator_screen/total.dart';
-import 'package:value_converter/ui/widget/appDrawer.dart';
+import 'package:value_converter/ui/widget/common_app_drawer.dart';
 import 'package:value_converter/ui/widget/common_app_bar.dart';
 
 class PercentageScreenBottomNavigationBar extends StatefulWidget {
@@ -24,7 +24,7 @@ class _PercentageScreenBottomNavigationBarState
         screenTitle: 'Percentage Calculator',
         child: const Icon(Icons.percent),
       ),
-      endDrawer: AppDrawer(),
+      endDrawer: CommonAppDrawer(),
       body: screenList[selectIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectIndex,

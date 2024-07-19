@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:value_converter/ui/screen/length_units.dart';
 import 'package:value_converter/ui/screen/temperature_converter_screen.dart';
 import 'package:value_converter/ui/widget/app_color.dart';
 import 'package:value_converter/ui/widget/percentage_screen_bottom_navigation_bar.dart';
 
-class AppDrawer extends StatelessWidget {
-  const AppDrawer({super.key});
+class CommonAppDrawer extends StatelessWidget {
+  const CommonAppDrawer({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,14 +14,15 @@ class AppDrawer extends StatelessWidget {
         child: Column(
           children: [
             DrawerHeader(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: AppColor.secondaryColor,
               ),
               child: InkWell(
-                onTap: (){
-                  Navigator.pop(context);Navigator.pop(context);
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.pop(context);
                 },
-                child: Container(
+                child: const SizedBox(
                   height: double.maxFinite,
                   width: double.maxFinite,
                   child: Center(
@@ -36,14 +38,17 @@ class AppDrawer extends StatelessWidget {
               ),
             ),
             InkWell(
-              onTap: (){
-                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>TemperatureConverterScreen()));
+              onTap: () {
+                Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => TemperatureConverterScreen()));
               },
               child: Container(
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
-                child: Center(
+                child: const Center(
                   child: Text(
                     'Temperature Converter',
                     style: TextStyle(
@@ -54,10 +59,17 @@ class AppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 1,),
+            SizedBox(
+              height: 1,
+            ),
             InkWell(
-              onTap: (){
-                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>PercentageScreenBottomNavigationBar()));
+              onTap: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => PercentageScreenBottomNavigationBar(),
+                  ),
+                );
               },
               child: Container(
                 color: AppColor.primaryColor,
@@ -74,9 +86,11 @@ class AppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 1,),
+            SizedBox(
+              height: 1,
+            ),
             InkWell(
-              onTap: (){},
+              onTap: () {},
               child: Container(
                 color: AppColor.primaryColor,
                 height: 50,
@@ -92,16 +106,25 @@ class AppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 1,),
+            SizedBox(
+              height: 1,
+            ),
             InkWell(
-              onTap: (){},
+              onTap: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => LengthUnits(),
+                  ),
+                );
+              },
               child: Container(
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
                 child: Center(
                   child: Text(
-                    'Length Unit',
+                    'Length Units',
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
@@ -110,16 +133,18 @@ class AppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 1,),
+            SizedBox(
+              height: 1,
+            ),
             InkWell(
-              onTap: (){},
+              onTap: () {},
               child: Container(
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
                 child: Center(
                   child: Text(
-                    'Area Unit',
+                    'Area Units',
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
@@ -128,16 +153,18 @@ class AppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 1,),
+            SizedBox(
+              height: 1,
+            ),
             InkWell(
-              onTap: (){},
+              onTap: () {},
               child: Container(
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
                 child: Center(
                   child: Text(
-                    'Weight Unit',
+                    'Weight Units',
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
@@ -146,16 +173,18 @@ class AppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 1,),
+            SizedBox(
+              height: 1,
+            ),
             InkWell(
-              onTap: (){},
+              onTap: () {},
               child: Container(
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
                 child: Center(
                   child: Text(
-                    'Volume Unit',
+                    'Volume Units',
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
@@ -164,16 +193,18 @@ class AppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 1,),
+            SizedBox(
+              height: 1,
+            ),
             InkWell(
-              onTap: (){},
+              onTap: () {},
               child: Container(
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
                 child: Center(
                   child: Text(
-                    'Cooking Unit',
+                    'Cooking Units',
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
@@ -182,16 +213,18 @@ class AppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 1,),
+            SizedBox(
+              height: 1,
+            ),
             InkWell(
-              onTap: (){},
+              onTap: () {},
               child: Container(
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
                 child: Center(
                   child: Text(
-                    'Work Unit',
+                    'Work Units',
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
@@ -200,16 +233,18 @@ class AppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 1,),
+            SizedBox(
+              height: 1,
+            ),
             InkWell(
-              onTap: (){},
+              onTap: () {},
               child: Container(
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
                 child: Center(
                   child: Text(
-                    'Force Unit',
+                    'Force Units',
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
@@ -218,16 +253,18 @@ class AppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 1,),
+            SizedBox(
+              height: 1,
+            ),
             InkWell(
-              onTap: (){},
+              onTap: () {},
               child: Container(
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
                 child: Center(
                   child: Text(
-                    'Power Unit',
+                    'Power Units',
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
@@ -236,9 +273,11 @@ class AppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 1,),
+            SizedBox(
+              height: 1,
+            ),
             InkWell(
-              onTap: (){},
+              onTap: () {},
               child: Container(
                 color: AppColor.primaryColor,
                 height: 50,
@@ -254,16 +293,18 @@ class AppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 1,),
+            SizedBox(
+              height: 1,
+            ),
             InkWell(
-              onTap: (){},
+              onTap: () {},
               child: Container(
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
                 child: Center(
                   child: Text(
-                    'Data Unit',
+                    'Data Units',
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
@@ -272,16 +313,18 @@ class AppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 1,),
+            SizedBox(
+              height: 1,
+            ),
             InkWell(
-              onTap: (){},
+              onTap: () {},
               child: Container(
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
                 child: Center(
                   child: Text(
-                    'Speed Unit',
+                    'Speed Units',
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
@@ -290,16 +333,18 @@ class AppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 1,),
+            SizedBox(
+              height: 1,
+            ),
             InkWell(
-              onTap: (){},
+              onTap: () {},
               child: Container(
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
                 child: Center(
                   child: Text(
-                    'Time Unit',
+                    'Time Units',
                     style: TextStyle(
                         color: AppColor.thirdColor,
                         fontWeight: FontWeight.w500,
@@ -308,7 +353,9 @@ class AppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 60,),
+            SizedBox(
+              height: 60,
+            ),
           ],
         ),
       ),

@@ -59,7 +59,7 @@ class CommonAppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 1,
             ),
             InkWell(
@@ -67,7 +67,7 @@ class CommonAppDrawer extends StatelessWidget {
                 Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => PercentageScreenBottomNavigationBar(),
+                    builder: (context) => const PercentageScreenBottomNavigationBar(),
                   ),
                 );
               },
@@ -75,7 +75,7 @@ class CommonAppDrawer extends StatelessWidget {
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
-                child: Center(
+                child: const Center(
                   child: Text(
                     'Percentage Calculator',
                     style: TextStyle(
@@ -86,7 +86,7 @@ class CommonAppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 1,
             ),
             InkWell(
@@ -95,7 +95,7 @@ class CommonAppDrawer extends StatelessWidget {
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
-                child: Center(
+                child: const Center(
                   child: Text(
                     'Currency Converter',
                     style: TextStyle(
@@ -106,7 +106,7 @@ class CommonAppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 1,
             ),
             InkWell(
@@ -122,7 +122,7 @@ class CommonAppDrawer extends StatelessWidget {
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
-                child: Center(
+                child: const Center(
                   child: Text(
                     'Length Units',
                     style: TextStyle(
@@ -133,7 +133,7 @@ class CommonAppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 1,
             ),
             InkWell(
@@ -142,7 +142,7 @@ class CommonAppDrawer extends StatelessWidget {
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
-                child: Center(
+                child: const Center(
                   child: Text(
                     'Area Units',
                     style: TextStyle(
@@ -153,7 +153,7 @@ class CommonAppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 1,
             ),
             InkWell(
@@ -162,7 +162,7 @@ class CommonAppDrawer extends StatelessWidget {
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
-                child: Center(
+                child: const Center(
                   child: Text(
                     'Weight Units',
                     style: TextStyle(
@@ -173,7 +173,7 @@ class CommonAppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 1,
             ),
             InkWell(
@@ -182,7 +182,7 @@ class CommonAppDrawer extends StatelessWidget {
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
-                child: Center(
+                child: const Center(
                   child: Text(
                     'Volume Units',
                     style: TextStyle(
@@ -193,7 +193,7 @@ class CommonAppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 1,
             ),
             InkWell(
@@ -202,7 +202,7 @@ class CommonAppDrawer extends StatelessWidget {
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
-                child: Center(
+                child: const Center(
                   child: Text(
                     'Cooking Units',
                     style: TextStyle(
@@ -213,7 +213,7 @@ class CommonAppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 1,
             ),
             InkWell(
@@ -222,7 +222,7 @@ class CommonAppDrawer extends StatelessWidget {
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
-                child: Center(
+                child: const Center(
                   child: Text(
                     'Work Units',
                     style: TextStyle(
@@ -233,7 +233,7 @@ class CommonAppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 1,
             ),
             InkWell(
@@ -242,7 +242,7 @@ class CommonAppDrawer extends StatelessWidget {
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
-                child: Center(
+                child: const Center(
                   child: Text(
                     'Force Units',
                     style: TextStyle(
@@ -253,7 +253,7 @@ class CommonAppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 1,
             ),
             InkWell(
@@ -262,7 +262,7 @@ class CommonAppDrawer extends StatelessWidget {
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
-                child: Center(
+                child: const Center(
                   child: Text(
                     'Power Units',
                     style: TextStyle(
@@ -273,7 +273,7 @@ class CommonAppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 1,
             ),
             InkWell(
@@ -282,7 +282,7 @@ class CommonAppDrawer extends StatelessWidget {
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
-                child: Center(
+                child: const Center(
                   child: Text(
                     'Binary',
                     style: TextStyle(
@@ -293,7 +293,7 @@ class CommonAppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 1,
             ),
             InkWell(
@@ -302,7 +302,7 @@ class CommonAppDrawer extends StatelessWidget {
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
-                child: Center(
+                child: const Center(
                   child: Text(
                     'Data Units',
                     style: TextStyle(
@@ -313,7 +313,7 @@ class CommonAppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 1,
             ),
             InkWell(
@@ -322,7 +322,7 @@ class CommonAppDrawer extends StatelessWidget {
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
-                child: Center(
+                child: const Center(
                   child: Text(
                     'Speed Units',
                     style: TextStyle(
@@ -333,7 +333,7 @@ class CommonAppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 1,
             ),
             InkWell(
@@ -342,7 +342,7 @@ class CommonAppDrawer extends StatelessWidget {
                 color: AppColor.primaryColor,
                 height: 50,
                 width: double.maxFinite,
-                child: Center(
+                child: const Center(
                   child: Text(
                     'Time Units',
                     style: TextStyle(
@@ -353,7 +353,7 @@ class CommonAppDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 60,
             ),
           ],

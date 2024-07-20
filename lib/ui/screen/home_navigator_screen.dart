@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:value_converter/ui/screen/temperature_converter_screen.dart';
 import 'package:value_converter/ui/widget/common_app_bar.dart';
 import 'package:value_converter/ui/widget/percentage_screen_bottom_navigation_bar.dart';
-
 import 'length_units.dart';
 
 class HomeNavigatorScreen extends StatelessWidget {
@@ -61,47 +60,47 @@ class HomeNavigatorScreen extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {},
-              child: Text('Area'),
+              child: const Text('Area'),
             ),
             ElevatedButton(
               onPressed: () {},
-              child: Text('Weight'),
+              child: const Text('Weight'),
             ),
             ElevatedButton(
               onPressed: () {},
-              child: Text('Volume'),
+              child: const Text('Volume'),
             ),
             ElevatedButton(
               onPressed: () {},
-              child: Text('Cooking'),
+              child: const Text('Cooking'),
             ),
             ElevatedButton(
               onPressed: () {},
-              child: Text('Work'),
+              child: const Text('Work'),
             ),
             ElevatedButton(
               onPressed: () {},
-              child: Text('Force'),
+              child: const Text('Force'),
             ),
             ElevatedButton(
               onPressed: () {},
-              child: Text('Power'),
+              child: const Text('Power'),
             ),
             ElevatedButton(
               onPressed: () {},
-              child: Text('Binary'),
+              child: const Text('Binary'),
             ),
             ElevatedButton(
               onPressed: () {},
-              child: Text('Data'),
+              child: const Text('Data'),
             ),
             ElevatedButton(
               onPressed: () {},
-              child: Icon(Icons.speed),
+              child: const Icon(Icons.speed),
             ),
             ElevatedButton(
               onPressed: () {},
-              child: Icon(Icons.av_timer),
+              child: const Icon(Icons.av_timer),
             ),
           ],
         ),

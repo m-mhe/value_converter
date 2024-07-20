@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:value_converter/ui/widget/common_app_drawer.dart';
 import 'package:value_converter/ui/widget/common_app_bar.dart';
-
 import '../widget/app_color.dart';
 
-class LengthUnits extends StatelessWidget{
+class LengthUnits extends StatelessWidget {
   LengthUnits({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: commonAppBar(screenTitle: 'Length Units', child: const Icon(Icons.calculate),),
+      appBar: commonAppBar(
+        screenTitle: 'Length Units',
+        child: const Icon(Icons.calculate),
+      ),
       endDrawer: const CommonAppDrawer(),
       body: SingleChildScrollView(
         child: Padding(
@@ -37,7 +39,10 @@ class LengthUnits extends StatelessWidget{
                           color: AppColor.primaryColor,
                           fontWeight: FontWeight.w500),
                       decoration: const InputDecoration(
-                        hintText: 'Enter Micrometre value', labelText: 'um Enter Micrometre value...', suffixText: 'um',),
+                        hintText: 'Enter Micrometre value',
+                        labelText: 'um',
+                        suffixText: 'um',
+                      ),
                     ),
                   ),
                 ),
@@ -63,7 +68,10 @@ class LengthUnits extends StatelessWidget{
                           color: AppColor.primaryColor,
                           fontWeight: FontWeight.w500),
                       decoration: const InputDecoration(
-                        hintText: 'Enter Millimetre value', labelText: 'mm Enter Millimetre value...', suffixText: 'mm',),
+                        hintText: 'Enter Millimetre value',
+                        labelText: 'mm',
+                        suffixText: 'mm',
+                      ),
                     ),
                   ),
                 ),
@@ -89,7 +97,10 @@ class LengthUnits extends StatelessWidget{
                           color: AppColor.primaryColor,
                           fontWeight: FontWeight.w500),
                       decoration: const InputDecoration(
-                        hintText: 'Enter Centimetre value', labelText: 'cm Enter Centimetre value...', suffixText: 'cm',),
+                        hintText: 'Enter Centimetre value',
+                        labelText: 'cm',
+                        suffixText: 'cm',
+                      ),
                     ),
                   ),
                 ),
@@ -115,7 +126,10 @@ class LengthUnits extends StatelessWidget{
                           color: AppColor.primaryColor,
                           fontWeight: FontWeight.w500),
                       decoration: const InputDecoration(
-                        hintText: 'Enter Millimetre value', labelText: 'dm', suffixText: 'dm',),
+                        hintText: 'Enter Millimetre value',
+                        labelText: 'dm',
+                        suffixText: 'dm',
+                      ),
                     ),
                   ),
                 ),
@@ -141,7 +155,10 @@ class LengthUnits extends StatelessWidget{
                           color: AppColor.primaryColor,
                           fontWeight: FontWeight.w500),
                       decoration: const InputDecoration(
-                        hintText: 'Enter Millimetre value', labelText: 'm', suffixText: 'm',),
+                        hintText: 'Enter Millimetre value',
+                        labelText: 'm',
+                        suffixText: 'm',
+                      ),
                     ),
                   ),
                 ),
@@ -167,7 +184,10 @@ class LengthUnits extends StatelessWidget{
                           color: AppColor.primaryColor,
                           fontWeight: FontWeight.w500),
                       decoration: const InputDecoration(
-                        hintText: 'Enter Millimetre value', labelText: 'inch', suffixText: 'inch',),
+                        hintText: 'Enter Millimetre value',
+                        labelText: 'inch',
+                        suffixText: 'inch',
+                      ),
                     ),
                   ),
                 ),
@@ -193,7 +213,10 @@ class LengthUnits extends StatelessWidget{
                           color: AppColor.primaryColor,
                           fontWeight: FontWeight.w500),
                       decoration: const InputDecoration(
-                        hintText: 'Enter Millimetre value', labelText: 'inch(1/n)', suffixText: 'inch(1/n)',),
+                        hintText: 'Enter Millimetre value',
+                        labelText: 'inch(1/n)',
+                        suffixText: 'inch(1/n)',
+                      ),
                     ),
                   ),
                 ),
@@ -219,7 +242,10 @@ class LengthUnits extends StatelessWidget{
                           color: AppColor.primaryColor,
                           fontWeight: FontWeight.w500),
                       decoration: const InputDecoration(
-                        hintText: 'Enter Millimetre value', labelText: 'ft', suffixText: 'ft',),
+                        hintText: 'Enter Millimetre value',
+                        labelText: 'ft',
+                        suffixText: 'ft',
+                      ),
                     ),
                   ),
                 ),
@@ -245,7 +271,10 @@ class LengthUnits extends StatelessWidget{
                           color: AppColor.primaryColor,
                           fontWeight: FontWeight.w500),
                       decoration: const InputDecoration(
-                        hintText: 'Enter Millimetre value', labelText: 'ft in', suffixText: 'ft in',),
+                        hintText: 'Enter Millimetre value',
+                        labelText: 'ft in',
+                        suffixText: 'ft in',
+                      ),
                     ),
                   ),
                 ),
@@ -271,7 +300,10 @@ class LengthUnits extends StatelessWidget{
                           color: AppColor.primaryColor,
                           fontWeight: FontWeight.w500),
                       decoration: const InputDecoration(
-                        hintText: 'Enter Millimetre value', labelText: 'yd', suffixText: 'yd',),
+                        hintText: 'Enter Millimetre value',
+                        labelText: 'yd',
+                        suffixText: 'yd',
+                      ),
                     ),
                   ),
                 ),
@@ -297,7 +329,10 @@ class LengthUnits extends StatelessWidget{
                           color: AppColor.primaryColor,
                           fontWeight: FontWeight.w500),
                       decoration: const InputDecoration(
-                        hintText: 'Enter Millimetre value', labelText: 'mile', suffixText: 'mile',),
+                        hintText: 'Enter Millimetre value',
+                        labelText: 'mile',
+                        suffixText: 'mile',
+                      ),
                     ),
                   ),
                 ),
@@ -323,7 +358,10 @@ class LengthUnits extends StatelessWidget{
                           color: AppColor.primaryColor,
                           fontWeight: FontWeight.w500),
                       decoration: const InputDecoration(
-                        hintText: 'Enter Millimetre value', labelText: 'km', suffixText: 'km',),
+                        hintText: 'Enter Millimetre value',
+                        labelText: 'km',
+                        suffixText: 'km',
+                      ),
                     ),
                   ),
                 ),
@@ -349,7 +387,10 @@ class LengthUnits extends StatelessWidget{
                           color: AppColor.primaryColor,
                           fontWeight: FontWeight.w500),
                       decoration: const InputDecoration(
-                        hintText: 'Enter Millimetre value', labelText: 'NM', suffixText: 'NM',),
+                        hintText: 'Enter Millimetre value',
+                        labelText: 'NM',
+                        suffixText: 'NM',
+                      ),
                     ),
                   ),
                 ),
@@ -368,18 +409,17 @@ class LengthUnits extends StatelessWidget{
 
   //--------------------------------------Function--------------------------------------
   void _onMicroMChange(v) {
-    _milliMTEC.text =
-    '${(double.parse(v)/1000)}';
-    _centiMTEC.text = '${(double.parse(v)/10000)}';
+    _milliMTEC.text = '${(double.parse(v) / 1000)}';
+    _centiMTEC.text = '${(double.parse(v) / 10000)}';
   }
+
   void _onMilliMChange(v) {
-    _microMTEC.text =
-    '${double.parse(v)*1000}';
-    _centiMTEC.text = '${(double.parse(v)/10)}';
+    _microMTEC.text = '${double.parse(v) * 1000}';
+    _centiMTEC.text = '${(double.parse(v) / 10)}';
   }
+
   void _onCentiMChange(v) {
-    _microMTEC.text = '${(double.parse(v)*10000)}';
-    _milliMTEC.text =
-    '${(double.parse(v)*10)}';
+    _microMTEC.text = '${(double.parse(v) * 10000)}';
+    _milliMTEC.text = '${(double.parse(v) * 10)}';
   }
 }

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:value_converter/ui/widget/common_app_drawer.dart';
 import 'package:value_converter/ui/widget/common_app_bar.dart';
-
 import '../widget/app_color.dart';
 
 class TemperatureConverterScreen extends StatelessWidget {

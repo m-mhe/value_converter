@@ -24,7 +24,7 @@ class _PercentageScreenBottomNavigationBarState
         screenTitle: 'Percentage Calculator',
         child: const Icon(Icons.percent),
       ),
-      endDrawer: CommonAppDrawer(),
+      endDrawer: const CommonAppDrawer(),
       body: screenList[selectIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectIndex,

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:value_converter/ui/widget/common_app_drawer.dart';
-import 'package:value_converter/ui/widget/common_app_bar.dart';
 
 import '../../widget/app_color.dart';
 
@@ -29,16 +27,16 @@ class PercentScreen extends StatelessWidget {
                     child: TextField(
                       controller: _percentageTEC,
                       enabled: false,
-                      style: TextStyle(
+                      style: const TextStyle(
                           color: AppColor.primaryColor,
                           fontWeight: FontWeight.w500),
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                         hintText: 'Percentage', label: Icon(Icons.percent, color: AppColor.primaryColor,), suffixText: '%',),
                     ),
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Container(
@@ -55,10 +53,10 @@ class PercentScreen extends StatelessWidget {
                       controller: _totalTEC,
                       keyboardType: TextInputType.number,
                       onChanged: _onTotalChange,
-                      style: TextStyle(
+                      style: const TextStyle(
                           color: AppColor.primaryColor,
                           fontWeight: FontWeight.w500),
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                         hintText: 'Enter Total value', label: Row(
                           children: [
                             Icon(Icons.join_full, color: AppColor.primaryColor,),
@@ -70,7 +68,7 @@ class PercentScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Container(

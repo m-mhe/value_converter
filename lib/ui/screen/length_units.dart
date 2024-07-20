@@ -500,15 +500,15 @@ class LengthUnits extends StatelessWidget {
   }
 
   void _onNmChange(v) {
-    _microMTEC.text = '${(double.parse(v) * 10000)}';
-    _milliMTEC.text = '${(double.parse(v) * 10)}';
-    _centiMTEC.text = '${(double.parse(v) / 10)}';
-    _deciMTEC.text = '${(double.parse(v) / 10000)}';
-    _metreTEC.text = '${(double.parse(v) / 10000)}';
-    _inchTEC.text = '${(double.parse(v) / 10000)}';
-    _ftTEC.text = '${(double.parse(v) / 10000)}';
-    _ydTEC.text = '${(double.parse(v) / 10000)}';
-    _mileTEC.text = '${(double.parse(v) / 10000)}';
-    _kmTEC.text = '${(double.parse(v) / 10000)}';
+    _microMTEC.text = '${(double.parse(v) * 1852000000)}';
+    _milliMTEC.text = '${(double.parse(v) * 1852000)}';
+    _centiMTEC.text = '${(double.parse(v) * 185200)}';
+    _deciMTEC.text = '${(double.parse(v) * 18520)}';
+    _metreTEC.text = '${(double.parse(v) * 1852)}';
+    _inchTEC.text = '${(double.parse(v) * 72913.3858)}';
+    _ftTEC.text = '${(double.parse(v) * 6076.11549)}';
+    _ydTEC.text = '${(double.parse(v) * 2025.37183)}';
+    _mileTEC.text = '${(double.parse(v) * 1.150779)}';
+    _kmTEC.text = '${(double.parse(v) * 1.852)}';
   }
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:value_converter/ui/screen/temperature_converter_screen.dart';
 import 'package:value_converter/ui/widget/common_app_bar.dart';
 import 'package:value_converter/ui/widget/percentage_screen_bottom_navigation_bar.dart';
+import 'area_units.dart';
 import 'length_units.dart';
 
 class HomeNavigatorScreen extends StatelessWidget {
@@ -59,7 +60,14 @@ class HomeNavigatorScreen extends StatelessWidget {
               child: const Text('Length'),
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => AreaUnits(),
+                  ),
+                );
+              },
               child: const Text('Area'),
             ),
             ElevatedButton(

@@ -24,7 +24,7 @@ class AreaUnitsState extends State<AreaUnits> {
           child: Padding(
             padding: EdgeInsets.symmetric(
                 horizontal: MediaQuery.sizeOf(context).width / 25,
-                vertical: MediaQuery.sizeOf(context).height / 4.5,
+                vertical: MediaQuery.sizeOf(context).height / 5,
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -36,7 +36,7 @@ class AreaUnitsState extends State<AreaUnits> {
                   child: Padding(
                     padding: EdgeInsets.symmetric(
                         horizontal: MediaQuery.sizeOf(context).width / 25,
-                        vertical: 45),
+                        vertical: 40),
                     child: Column(
                       children: [
                         TextField(
@@ -79,6 +79,8 @@ class AreaUnitsState extends State<AreaUnits> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         DropdownMenu(
+                          initialSelection: 5,
+                            width: 100,
                           menuHeight: 150,
                             inputDecorationTheme: InputDecorationTheme(
                                 filled: true,
@@ -105,6 +107,8 @@ class AreaUnitsState extends State<AreaUnits> {
                             ]),
                         Icon(Icons.compare_arrows,color: AppColor.accentColor,),
                         DropdownMenu(
+                          initialSelection: 3,
+                          width: 100,
                             menuHeight: 150,
                             inputDecorationTheme: InputDecorationTheme(
                                 filled: true,

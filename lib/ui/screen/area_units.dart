@@ -4,6 +4,8 @@ import 'package:value_converter/ui/widget/common_app_bar.dart';
 import 'package:value_converter/ui/widget/common_app_drawer.dart';
 
 class AreaUnits extends StatefulWidget {
+  const AreaUnits({super.key});
+
   @override
   State<StatefulWidget> createState() {
     return AreaUnitsState();

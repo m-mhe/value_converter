@@ -33,10 +33,10 @@ class TemperatureConverterScreen extends StatelessWidget {
                       controller: _celTEC,
                       keyboardType: TextInputType.number,
                       onChanged: _onCalChange,
-                      style: TextStyle(
+                      style: const TextStyle(
                           color: AppColor.primaryColor,
                           fontWeight: FontWeight.w500),
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                           hintText: 'Enter Celsius value', labelText: '°C', suffixText: '°C',),
                     ),
                   ),

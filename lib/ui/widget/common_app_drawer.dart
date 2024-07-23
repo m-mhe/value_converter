@@ -141,7 +141,7 @@ class CommonAppDrawer extends StatelessWidget {
               onTap: () {Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => AreaUnits(),
+                  builder: (context) => const AreaUnits(),
                 ),
               );},
               child: Container(

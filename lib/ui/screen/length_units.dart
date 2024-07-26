@@ -41,8 +41,8 @@ class LengthUnits extends StatelessWidget {
                           fontWeight: FontWeight.w500),
                       decoration: const InputDecoration(
                         hintText: 'Enter Micrometre value',
-                        labelText: 'um',
-                        suffixText: 'um',
+                        labelText: 'μm',
+                        suffixText: 'μm',
                       ),
                     ),
                   ),

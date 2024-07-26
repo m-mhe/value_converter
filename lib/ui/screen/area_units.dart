@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:value_converter/ui/widget/app_color.dart';
 import 'package:value_converter/ui/widget/common_app_bar.dart';
 import 'package:value_converter/ui/widget/common_app_drawer.dart';
+import 'dart:math';
 
 class AreaUnits extends StatefulWidget {
   const AreaUnits({super.key});
@@ -59,7 +60,8 @@ class AreaUnitsState extends State<AreaUnits> {
                           decoration: InputDecoration(
                               fillColor: AppColor.thirdColor,
                               suffixText: _oneUnitsForTF[_oneCurrentStateForTF],
-                              labelText: 'Enter ${_oneUnitsForTF[_oneCurrentStateForTF]} value'),
+                              labelText:
+                                  'Enter ${_oneUnitsForTF[_oneCurrentStateForTF]} value'),
                         ),
                         SizedBox(
                           height: 25,
@@ -72,9 +74,11 @@ class AreaUnitsState extends State<AreaUnits> {
                           style: const TextStyle(
                               color: AppColor.primaryColor,
                               fontWeight: FontWeight.w500),
-                          decoration:
-                              InputDecoration(fillColor: AppColor.thirdColor, suffixText: _twoUnitsForTF[_twoCurrentStateForTF],
-                                  labelText: 'Enter ${_twoUnitsForTF[_twoCurrentStateForTF]} value'),
+                          decoration: InputDecoration(
+                              fillColor: AppColor.thirdColor,
+                              suffixText: _twoUnitsForTF[_twoCurrentStateForTF],
+                              labelText:
+                                  'Enter ${_twoUnitsForTF[_twoCurrentStateForTF]} value'),
                         )
                       ],
                     ),
@@ -95,6 +99,7 @@ class AreaUnitsState extends State<AreaUnits> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         DropdownMenu(
+                            textStyle: const TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
                             initialSelection: _oneCurrentStateForTF,
                             onSelected: (v) {
                               _oneTEC.clear();
@@ -148,6 +153,7 @@ class AreaUnitsState extends State<AreaUnits> {
                           color: AppColor.accentColor,
                         ),
                         DropdownMenu(
+                          textStyle: const TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
                             initialSelection: _twoCurrentStateForTF,
                             onSelected: (v) {
                               _oneTEC.clear();
@@ -157,13 +163,13 @@ class AreaUnitsState extends State<AreaUnits> {
                             },
                             width: 100,
                             menuHeight: 150,
-                            inputDecorationTheme: InputDecorationTheme(
+                            inputDecorationTheme: const InputDecorationTheme(
                                 filled: true,
                                 fillColor: AppColor.accentColor,
                                 enabledBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
                                         color: AppColor.secondaryColor))),
-                            label: Text(
+                            label: const Text(
                               "Select an Unit",
                               textAlign: TextAlign.start,
                               style: TextStyle(
@@ -210,50 +216,364 @@ class AreaUnitsState extends State<AreaUnits> {
   final TextEditingController _oneTEC = TextEditingController();
   final TextEditingController _twoTEC = TextEditingController();
   final List<String> _oneUnitsForTF = [
-    'mm^2',
-    'cm^2',
-    'dm^2',
-    'm^2',
-    'in^2',
-    'ft^2',
-    'yd^2',
+    'mm²',
+    'cm²',
+    'dm²',
+    'm²',
+    'in²',
+    'ft²',
+    'yd²',
     'a',
     'ha',
-    'km^2',
+    'km²',
     'acre',
-    'mile^2'
+    'mile²'
   ];
   final List<String> _twoUnitsForTF = [
-    'mm^2',
-    'cm^2',
-    'dm^2',
-    'm^2',
-    'in^2',
-    'ft^2',
-    'yd^2',
+    'mm²',
+    'cm²',
+    'dm²',
+    'm²',
+    'in²',
+    'ft²',
+    'yd²',
     'a',
     'ha',
-    'km^2',
+    'km²',
     'acre',
-    'mile^2'
+    'mile²'
   ];
   int _oneCurrentStateForTF = 0;
   int _twoCurrentStateForTF = 0;
 
   //=======================================FUNCTIONS=======================================
-  void _onChangeOne(v) {
+  void _onChangeOne(String v) {
     switch (_twoCurrentStateForTF) {
       case (0):
         {
           switch (_oneCurrentStateForTF) {
             case (0):
               {
-                _twoTEC.text = _oneTEC.text;
+                _twoTEC.text = v;
                 break;
               }
             case (1):
               {
                 _twoTEC.text = '${double.parse(v) * 100}';
+                break;
+              }
+            case (2):
+              {
+                _twoTEC.text = '${double.parse(v) * 10000}';
+                break;
+              }
+            case (3):
+              {
+                _twoTEC.text = '${double.parse(v) * 1000000}';
+                break;
+              }
+            case (4):
+              {
+                _twoTEC.text = '${double.parse(v) * 645.16}';
+                break;
+              }
+            case (5):
+              {
+                _twoTEC.text = '${double.parse(v) * 92903.04}';
+                break;
+              }
+            case (6):
+              {
+                _twoTEC.text = '${double.parse(v) * 836127.36}';
+                break;
+              }
+            case (7):
+              {
+                _twoTEC.text = '${double.parse(v) * 1000000000}';
+                break;
+              }
+            case (8):
+              {
+                _twoTEC.text = '${double.parse(v) * 1.000E+10}';
+                break;
+              }
+            case (9):
+              {
+                _twoTEC.text = '${double.parse(v) * 1.000E+12}';
+                break;
+              }
+            case (10):
+              {
+                _twoTEC.text = '${double.parse(v) * 4046856422}';
+                break;
+              }
+            case (11):
+              {
+                _twoTEC.text = '${double.parse(v) * 2.590E+12}';
+                break;
+              }
+          }
+          break;
+        }
+      case (1):
+        {
+          switch (_oneCurrentStateForTF) {
+            case (0):
+              {
+                _twoTEC.text = '${double.parse(v)/100}';
+                break;
+              }
+            case (1):
+              {
+                _twoTEC.text = v;
+                break;
+              }
+            case (2):
+              {
+                _twoTEC.text = '${double.parse(v) * 100}';
+                break;
+              }
+            case (3):
+              {
+                _twoTEC.text = '${double.parse(v) * 10000}';
+                break;
+              }
+            case (4):
+              {
+                _twoTEC.text = '${double.parse(v) * 6.4516}';
+                break;
+              }
+            case (5):
+              {
+                _twoTEC.text = '${double.parse(v) * 929.0304}';
+                break;
+              }
+            case (6):
+              {
+                _twoTEC.text = '${double.parse(v) * 8361.2736}';
+                break;
+              }
+            case (7):
+              {
+                _twoTEC.text = '${double.parse(v) * 1000000}';
+                break;
+              }
+            case (8):
+              {
+                _twoTEC.text = '${double.parse(v) * 1000000000}';
+                break;
+              }
+            case (9):
+              {
+                _twoTEC.text = '${double.parse(v) * 1.000E+10}';
+                break;
+              }
+            case (10):
+              {
+                _twoTEC.text = '${double.parse(v) * 40468564.22}';
+                break;
+              }
+            case (11):
+              {
+                _twoTEC.text = '${double.parse(v) * 2.590E+10}';
+                break;
+              }
+          }
+          break;
+        }
+      case (2):
+        {
+          switch (_oneCurrentStateForTF) {
+            case (0):
+              {
+                _twoTEC.text = '${double.parse(v)/10000}';
+                break;
+              }
+            case (1):
+              {
+                _twoTEC.text = '${double.parse(v)/100}';
+                break;
+              }
+            case (2):
+              {
+                _twoTEC.text = v;
+                break;
+              }
+            case (3):
+              {
+                _twoTEC.text = '${double.parse(v) * 100}';
+                break;
+              }
+            case (4):
+              {
+                _twoTEC.text = '${double.parse(v) / 15.500031}';
+                break;
+              }
+            case (5):
+              {
+                _twoTEC.text = '${double.parse(v) * 9.290304}';
+                break;
+              }
+            case (6):
+              {
+                _twoTEC.text = '${double.parse(v) * 83.612736}';
+                break;
+              }
+            case (7):
+              {
+                _twoTEC.text = '${double.parse(v) * 10000}';
+                break;
+              }
+            case (8):
+              {
+                _twoTEC.text = '${double.parse(v) * 1000000}';
+                break;
+              }
+            case (9):
+              {
+                _twoTEC.text = '${double.parse(v) * 1000000000}';
+                break;
+              }
+            case (10):
+              {
+                _twoTEC.text = '${double.parse(v) * 404685.6422}';
+                break;
+              }
+            case (11):
+              {
+                _twoTEC.text = '${double.parse(v) * 258998811.0336}';
+                break;
+              }
+          }
+          break;
+        }
+      case (3):
+        {
+          switch (_oneCurrentStateForTF) {
+            case (0):
+              {
+                _twoTEC.text = '${double.parse(v)/1000000}';
+                break;
+              }
+            case (1):
+              {
+                _twoTEC.text = '${double.parse(v)/10000}';
+                break;
+              }
+            case (2):
+              {
+                _twoTEC.text = '${double.parse(v) / 100}';
+                break;
+              }
+            case (3):
+              {
+                _twoTEC.text = v;
+                break;
+              }
+            case (4):
+              {
+                _twoTEC.text = '${double.parse(v) / 1550.0031}';
+                break;
+              }
+            case (5):
+              {
+                _twoTEC.text = '${double.parse(v) / 10.763910417}';
+                break;
+              }
+            case (6):
+              {
+                _twoTEC.text = '${double.parse(v) * 0.83612736}';
+                break;
+              }
+            case (7):
+              {
+                _twoTEC.text = '${double.parse(v) * 100}';
+                break;
+              }
+            case (8):
+              {
+                _twoTEC.text = '${double.parse(v) * 10000}';
+                break;
+              }
+            case (9):
+              {
+                _twoTEC.text = '${double.parse(v) * 1000000}';
+                break;
+              }
+            case (10):
+              {
+                _twoTEC.text = '${double.parse(v) * 4046.8726099}';
+                break;
+              }
+            case (11):
+              {
+                _twoTEC.text = '${double.parse(v) * 2589988.110336}';
+                break;
+              }
+          }
+          break;
+        }
+      case (4):
+        {
+          switch (_oneCurrentStateForTF) {
+            case (0):
+              {
+                _twoTEC.text = '${double.parse(v)/645.16}';
+                break;
+              }
+            case (1):
+              {
+                _twoTEC.text = '${double.parse(v)/6.4516}';
+                break;
+              }
+            case (2):
+              {
+                _twoTEC.text = '${double.parse(v) / 0.064516}';
+                break;
+              }
+            case (3):
+              {
+                _twoTEC.text = '${double.parse(v) / 0.00064516}';
+                break;
+              }
+            case (4):
+              {
+                _twoTEC.text = v;
+                break;
+              }
+            case (5):
+              {
+                _twoTEC.text = '${double.parse(v) * 144}';
+                break;
+              }
+            case (6):
+              {
+                _twoTEC.text = '${double.parse(v) * 1296}';
+                break;
+              }
+            case (7):
+              {
+                _twoTEC.text = '${double.parse(v) * 155000.31}';
+                break;
+              }
+            case (8):
+              {
+                _twoTEC.text = '${double.parse(v) * 15500031}';
+                break;
+              }
+            case (9):
+              {
+                _twoTEC.text = '${double.parse(v) * 1550003100}';
+                break;
+              }
+            case (10):
+              {
+                _twoTEC.text = '${double.parse(v) * 6272640}';
+                break;
+              }
+            case (11):
+              {
+                _twoTEC.text = '${double.parse(v) * 4014489600}';
                 break;
               }
           }

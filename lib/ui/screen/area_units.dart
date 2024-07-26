@@ -579,6 +579,468 @@ class AreaUnitsState extends State<AreaUnits> {
           }
           break;
         }
+      case (5):
+        {
+          switch (_oneCurrentStateForTF) {
+            case (0):
+              {
+                _twoTEC.text = '${double.parse(v)/92903.04}';
+                break;
+              }
+            case (1):
+              {
+                _twoTEC.text = '${double.parse(v)/929.0304}';
+                break;
+              }
+            case (2):
+              {
+                _twoTEC.text = '${double.parse(v) / 9.290304}';
+                break;
+              }
+            case (3):
+              {
+                _twoTEC.text = '${double.parse(v) / 0.09290304}';
+                break;
+              }
+            case (4):
+              {
+                _twoTEC.text = '${double.parse(v) / 144}';
+                break;
+              }
+            case (5):
+              {
+                _twoTEC.text = v;
+                break;
+              }
+            case (6):
+              {
+                _twoTEC.text = '${double.parse(v) * 9}';
+                break;
+              }
+            case (7):
+              {
+                _twoTEC.text = '${double.parse(v) * 1076.3910417}';
+                break;
+              }
+            case (8):
+              {
+                _twoTEC.text = '${double.parse(v) * 107639.10417}';
+                break;
+              }
+            case (9):
+              {
+                _twoTEC.text = '${double.parse(v) * 10763910.417}';
+                break;
+              }
+            case (10):
+              {
+                _twoTEC.text = '${double.parse(v) * 43560}';
+                break;
+              }
+            case (11):
+              {
+                _twoTEC.text = '${double.parse(v) * 27878400}';
+                break;
+              }
+          }
+          break;
+        }
+      case (6):
+        {
+          switch (_oneCurrentStateForTF) {
+            case (0):
+              {
+                _twoTEC.text = '${double.parse(v)/836127.36}';
+                break;
+              }
+            case (1):
+              {
+                _twoTEC.text = '${double.parse(v)/8361.2736}';
+                break;
+              }
+            case (2):
+              {
+                _twoTEC.text = '${double.parse(v) / 83.612736}';
+                break;
+              }
+            case (3):
+              {
+                _twoTEC.text = '${double.parse(v) / 0.83612736}';
+                break;
+              }
+            case (4):
+              {
+                _twoTEC.text = '${double.parse(v) / 1296}';
+                break;
+              }
+            case (5):
+              {
+                _twoTEC.text = '${double.parse(v) / 9}';
+                break;
+              }
+            case (6):
+              {
+                _twoTEC.text = v;
+                break;
+              }
+            case (7):
+              {
+                _twoTEC.text = '${double.parse(v) * 119.59900463}';
+                break;
+              }
+            case (8):
+              {
+                _twoTEC.text = '${double.parse(v) * 11959.900463}';
+                break;
+              }
+            case (9):
+              {
+                _twoTEC.text = '${double.parse(v) * 1195990.0463}';
+                break;
+              }
+            case (10):
+              {
+                _twoTEC.text = '${double.parse(v) * 4840}';
+                break;
+              }
+            case (11):
+              {
+                _twoTEC.text = '${double.parse(v) * 3097600}';
+                break;
+              }
+          }
+          break;
+        }
+      case (7):
+        {
+          switch (_oneCurrentStateForTF) {
+            case (0):
+              {
+                _twoTEC.text = '${double.parse(v)/100000000}';
+                break;
+              }
+            case (1):
+              {
+                _twoTEC.text = '${double.parse(v)/1000000}';
+                break;
+              }
+            case (2):
+              {
+                _twoTEC.text = '${double.parse(v) / 10000}';
+                break;
+              }
+            case (3):
+              {
+                _twoTEC.text = '${double.parse(v) / 100}';
+                break;
+              }
+            case (4):
+              {
+                _twoTEC.text = '${double.parse(v) / 155000.31}';
+                break;
+              }
+            case (5):
+              {
+                _twoTEC.text = '${double.parse(v) / 1076.3910417}';
+                break;
+              }
+            case (6):
+              {
+                _twoTEC.text = '${double.parse(v) / 119.59900463}';
+                break;
+              }
+            case (7):
+              {
+                _twoTEC.text = v;
+                break;
+              }
+            case (8):
+              {
+                _twoTEC.text = '${double.parse(v) * 100}';
+                break;
+              }
+            case (9):
+              {
+                _twoTEC.text = '${double.parse(v) * 10000}';
+                break;
+              }
+            case (10):
+              {
+                _twoTEC.text = '${double.parse(v) * 40.468564224}';
+                break;
+              }
+            case (11):
+              {
+                _twoTEC.text = '${double.parse(v) * 25899.881103}';
+                break;
+              }
+          }
+          break;
+        }
+      case (8):
+        {
+          switch (_oneCurrentStateForTF) {
+            case (0):
+              {
+                _twoTEC.text = '${double.parse(v)/10000000000}';
+                break;
+              }
+            case (1):
+              {
+                _twoTEC.text = '${double.parse(v)/100000000}';
+                break;
+              }
+            case (2):
+              {
+                _twoTEC.text = '${double.parse(v) / 1000000}';
+                break;
+              }
+            case (3):
+              {
+                _twoTEC.text = '${double.parse(v) / 10000}';
+                break;
+              }
+            case (4):
+              {
+                _twoTEC.text = '${double.parse(v) / 15500031}';
+                break;
+              }
+            case (5):
+              {
+                _twoTEC.text = '${double.parse(v) / 107639.10417}';
+                break;
+              }
+            case (6):
+              {
+                _twoTEC.text = '${double.parse(v) / 11959.900463}';
+                break;
+              }
+            case (7):
+              {
+                _twoTEC.text = '${double.parse(v) / 100}';
+                break;
+              }
+            case (8):
+              {
+                _twoTEC.text = v;
+                break;
+              }
+            case (9):
+              {
+                _twoTEC.text = '${double.parse(v) * 100}';
+                break;
+              }
+            case (10):
+              {
+                _twoTEC.text = '${double.parse(v) * 0.40468564224}';
+                break;
+              }
+            case (11):
+              {
+                _twoTEC.text = '${double.parse(v) * 258.99881103}';
+                break;
+              }
+          }
+          break;
+        }
+      case (9):
+        {
+          switch (_oneCurrentStateForTF) {
+            case (0):
+              {
+                _twoTEC.text = '${double.parse(v)/1000000000000}';
+                break;
+              }
+            case (1):
+              {
+                _twoTEC.text = '${double.parse(v)/10000000000}';
+                break;
+              }
+            case (2):
+              {
+                _twoTEC.text = '${double.parse(v) / 100000000}';
+                break;
+              }
+            case (3):
+              {
+                _twoTEC.text = '${double.parse(v) / 1000000}';
+                break;
+              }
+            case (4):
+              {
+                _twoTEC.text = '${double.parse(v) / 1550003100}';
+                break;
+              }
+            case (5):
+              {
+                _twoTEC.text = '${double.parse(v) / 10763910.417}';
+                break;
+              }
+            case (6):
+              {
+                _twoTEC.text = '${double.parse(v) / 1195990.0463}';
+                break;
+              }
+            case (7):
+              {
+                _twoTEC.text = '${double.parse(v) / 10000}';
+                break;
+              }
+            case (8):
+              {
+                _twoTEC.text = '${double.parse(v) / 100}';
+                break;
+              }
+            case (9):
+              {
+                _twoTEC.text = v;
+                break;
+              }
+            case (10):
+              {
+                _twoTEC.text = '${double.parse(v) * 0.0040468564224}';
+                break;
+              }
+            case (11):
+              {
+                _twoTEC.text = '${double.parse(v) * 2.5899881103}';
+                break;
+              }
+          }
+          break;
+        }
+      case (10):
+        {
+          switch (_oneCurrentStateForTF) {
+            case (0):
+              {
+                _twoTEC.text = '${double.parse(v)/4046856422.4}';
+                break;
+              }
+            case (1):
+              {
+                _twoTEC.text = '${double.parse(v)/40468564.224}';
+                break;
+              }
+            case (2):
+              {
+                _twoTEC.text = '${double.parse(v) / 404685.64224}';
+                break;
+              }
+            case (3):
+              {
+                _twoTEC.text = '${double.parse(v) / 4046.8564224}';
+                break;
+              }
+            case (4):
+              {
+                _twoTEC.text = '${double.parse(v) / 6272640}';
+                break;
+              }
+            case (5):
+              {
+                _twoTEC.text = '${double.parse(v) / 43560}';
+                break;
+              }
+            case (6):
+              {
+                _twoTEC.text = '${double.parse(v) / 4840}';
+                break;
+              }
+            case (7):
+              {
+                _twoTEC.text = '${double.parse(v) / 40.468564224}';
+                break;
+              }
+            case (8):
+              {
+                _twoTEC.text = '${double.parse(v) / 0.4046856422}';
+                break;
+              }
+            case (9):
+              {
+                _twoTEC.text = '${double.parse(v) / 0.004046856422}';
+                break;
+              }
+            case (10):
+              {
+                _twoTEC.text = v;
+                break;
+              }
+            case (11):
+              {
+                _twoTEC.text = '${double.parse(v) * 640}';
+                break;
+              }
+          }
+          break;
+        }
+      case (11):
+        {
+          switch (_oneCurrentStateForTF) {
+            case (0):
+              {
+                _twoTEC.text = '${double.parse(v)/2589988110336}';
+                break;
+              }
+            case (1):
+              {
+                _twoTEC.text = '${double.parse(v)/25899881103.36}';
+                break;
+              }
+            case (2):
+              {
+                _twoTEC.text = '${double.parse(v) / 258998811.0336}';
+                break;
+              }
+            case (3):
+              {
+                _twoTEC.text = '${double.parse(v) / 2589988.110336}';
+                break;
+              }
+            case (4):
+              {
+                _twoTEC.text = '${double.parse(v) / 4014489600}';
+                break;
+              }
+            case (5):
+              {
+                _twoTEC.text = '${double.parse(v) / 27878400}';
+                break;
+              }
+            case (6):
+              {
+                _twoTEC.text = '${double.parse(v) / 3097600}';
+                break;
+              }
+            case (7):
+              {
+                _twoTEC.text = '${double.parse(v) / 25899.88110336}';
+                break;
+              }
+            case (8):
+              {
+                _twoTEC.text = '${double.parse(v) / 258.9988110336}';
+                break;
+              }
+            case (9):
+              {
+                _twoTEC.text = '${double.parse(v) / 2.589988110336}';
+                break;
+              }
+            case (10):
+              {
+                _twoTEC.text = '${double.parse(v) / 640}';
+                break;
+              }
+            case (11):
+              {
+                _twoTEC.text = v;
+                break;
+              }
+          }
+          break;
+        }
     }
   }
 

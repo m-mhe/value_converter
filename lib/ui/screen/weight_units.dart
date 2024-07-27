@@ -146,6 +146,10 @@ class _WeightUnitsState extends State<WeightUnits> {
                                   value: 10, label: _oneUnitsForTF[10]),
                               DropdownMenuEntry(
                                   value: 11, label: _oneUnitsForTF[11]),
+                              DropdownMenuEntry(
+                                  value: 12, label: _oneUnitsForTF[12]),
+                              DropdownMenuEntry(
+                                  value: 13, label: _oneUnitsForTF[13]),
                             ]),
                         const Icon(
                           Icons.compare_arrows,
@@ -200,6 +204,10 @@ class _WeightUnitsState extends State<WeightUnits> {
                                   value: 10, label: _twoUnitsForTF[10]),
                               DropdownMenuEntry(
                                   value: 11, label: _twoUnitsForTF[11]),
+                              DropdownMenuEntry(
+                                  value: 12, label: _twoUnitsForTF[12]),
+                              DropdownMenuEntry(
+                                  value: 13, label: _twoUnitsForTF[13]),
                             ]),
                       ],
                     ),
@@ -215,32 +223,36 @@ class _WeightUnitsState extends State<WeightUnits> {
   final TextEditingController _oneTEC = TextEditingController();
   final TextEditingController _twoTEC = TextEditingController();
   final List<String> _oneUnitsForTF = [
-    'mm²',
-    'cm²',
-    'dm²',
-    'm²',
-    'in²',
-    'ft²',
-    'yd²',
-    'a',
-    'ha',
-    'km²',
-    'acre',
-    'mile²'
+    'μg',
+    'mg',
+    'g',
+    'kg',
+    'lb',
+    'oz',
+    'oz t',
+    'grain',
+    'tonne',
+    'ton(uk)',
+    'ton(us)',
+    'stone(uk)',
+    'cwt',
+    'carat',
   ];
   final List<String> _twoUnitsForTF = [
-    'mm²',
-    'cm²',
-    'dm²',
-    'm²',
-    'in²',
-    'ft²',
-    'yd²',
-    'a',
-    'ha',
-    'km²',
-    'acre',
-    'mile²'
+    'μg',
+    'mg',
+    'g',
+    'kg',
+    'lb',
+    'oz',
+    'oz t',
+    'grain',
+    'tonne',
+    'ton(uk)',
+    'ton(us)',
+    'stone(uk)',
+    'cwt',
+    'carat',
   ];
   int _oneCurrentStateForTF = 0;
   int _twoCurrentStateForTF = 0;

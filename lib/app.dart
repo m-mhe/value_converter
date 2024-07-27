@@ -29,12 +29,16 @@ class MyApp extends StatelessWidget {
                 color: AppColor.primaryColor)),
         scaffoldBackgroundColor: AppColor.primaryColor,
         elevatedButtonTheme: ElevatedButtonThemeData(
-            style: ElevatedButton.styleFrom(
-                backgroundColor: AppColor.secondaryColor,
-                foregroundColor: AppColor.accentColor,
-                textStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(7)))),
+          style: ElevatedButton.styleFrom(
+            backgroundColor: AppColor.secondaryColor,
+            foregroundColor: AppColor.accentColor,
+            textStyle:
+                const TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(7),
+            ),
+          ),
+        ),
         inputDecorationTheme: InputDecorationTheme(
           filled: true,
           isDense: true,
@@ -56,15 +60,19 @@ class MyApp extends StatelessWidget {
           ),
           enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(5),
-              borderSide: const BorderSide(color: AppColor.primaryColor, width: 1)),
+              borderSide:
+                  const BorderSide(color: AppColor.primaryColor, width: 1)),
           focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(5),
-              borderSide: const BorderSide(color: Colors.transparent, width: 1)),
+              borderSide:
+                  const BorderSide(color: Colors.transparent, width: 1)),
         ),
         drawerTheme: DrawerThemeData(
-            backgroundColor: AppColor.thirdColor,
-            endShape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(7))),
+          backgroundColor: AppColor.thirdColor,
+          endShape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(7),
+          ),
+        ),
         bottomNavigationBarTheme: const BottomNavigationBarThemeData(
             backgroundColor: AppColor.secondaryColor,
             selectedItemColor: AppColor.accentColor,
@@ -73,21 +81,25 @@ class MyApp extends StatelessWidget {
 
   ThemeData lightTheme() {
     return ThemeData(
-        appBarTheme: const AppBarTheme(
-            backgroundColor: Color(0xff386286),
-            foregroundColor: Color(0xffC6CDD2),
-            centerTitle: true,
-            titleTextStyle: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w600,
-                color: Color(0xffC6CDD2))),
-        scaffoldBackgroundColor: Colors.white,
-        elevatedButtonTheme: ElevatedButtonThemeData(
-            style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xffC6CDD2),
-                foregroundColor: const Color(0xff386286),
-                textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(7)))));
+      appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xff386286),
+          foregroundColor: Color(0xffC6CDD2),
+          centerTitle: true,
+          titleTextStyle: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.w600,
+              color: Color(0xffC6CDD2))),
+      scaffoldBackgroundColor: Colors.white,
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: const Color(0xffC6CDD2),
+          foregroundColor: const Color(0xff386286),
+          textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(7),
+          ),
+        ),
+      ),
+    );
   }
 }

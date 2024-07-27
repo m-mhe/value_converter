@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:value_converter/ui/widget/app_color.dart';
 import 'package:value_converter/ui/widget/common_app_bar.dart';
 import 'package:value_converter/ui/widget/common_app_drawer.dart';
-import 'dart:math';
 
 class AreaUnits extends StatefulWidget {
   const AreaUnits({super.key});
@@ -41,6 +40,7 @@ class AreaUnitsState extends State<AreaUnits> {
               children: [
                 Card(
                   color: AppColor.accentColor,
+                  elevation: 3,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(7)),
                   child: Padding(
@@ -88,6 +88,7 @@ class AreaUnitsState extends State<AreaUnits> {
                   height: 10,
                 ),
                 Card(
+                  elevation: 3,
                   color: AppColor.secondaryColor,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(7)),

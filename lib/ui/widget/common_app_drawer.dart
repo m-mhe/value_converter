@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:value_converter/ui/screen/area_units.dart';
 import 'package:value_converter/ui/screen/length_units.dart';
 import 'package:value_converter/ui/screen/temperature_converter_screen.dart';
+import 'package:value_converter/ui/screen/weight_units.dart';
 import 'package:value_converter/ui/widget/app_color.dart';
 import 'package:value_converter/ui/widget/percentage_screen_bottom_navigation_bar.dart';
 
@@ -163,7 +164,9 @@ class CommonAppDrawer extends StatelessWidget {
               height: 1,
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const WeightUnits()));
+              },
               child: Container(
                 color: AppColor.primaryColor,
                 height: 50,

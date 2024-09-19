@@ -60,7 +60,7 @@ class AreaUnitsState extends State<AreaUnits> {
                           decoration: InputDecoration(
                               fillColor: AppColor.thirdColor,
                               suffixText: _oneUnitsForTF[_oneCurrentStateForTF],
-                              labelText:
+                              hintText:
                                   'Enter ${_oneUnitsForTF[_oneCurrentStateForTF]} value'),
                         ),
                         SizedBox(
@@ -77,7 +77,7 @@ class AreaUnitsState extends State<AreaUnits> {
                           decoration: InputDecoration(
                               fillColor: AppColor.thirdColor,
                               suffixText: _twoUnitsForTF[_twoCurrentStateForTF],
-                              labelText:
+                              hintText:
                                   'Enter ${_twoUnitsForTF[_twoCurrentStateForTF]} value'),
                         )
                       ],
@@ -1840,5 +1840,11 @@ class AreaUnitsState extends State<AreaUnits> {
           break;
         }
     }
+  }
+  @override
+  void dispose() {
+    _twoTEC.dispose();
+    _oneTEC.dispose();
+    super.dispose();
   }
 }

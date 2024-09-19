@@ -58,8 +58,8 @@ class _WeightUnitsState extends State<WeightUnits> {
                           decoration: InputDecoration(
                               fillColor: AppColor.thirdColor,
                               suffixText: _oneUnitsForTF[_oneCurrentStateForTF],
-                              labelText:
-                              'Enter ${_oneUnitsForTF[_oneCurrentStateForTF]} value'),
+                              hintText:
+                                  'Enter ${_oneUnitsForTF[_oneCurrentStateForTF]} value'),
                         ),
                         SizedBox(
                           height: 25,
@@ -75,8 +75,8 @@ class _WeightUnitsState extends State<WeightUnits> {
                           decoration: InputDecoration(
                               fillColor: AppColor.thirdColor,
                               suffixText: _twoUnitsForTF[_twoCurrentStateForTF],
-                              labelText:
-                              'Enter ${_twoUnitsForTF[_twoCurrentStateForTF]} value'),
+                              hintText:
+                                  'Enter ${_twoUnitsForTF[_twoCurrentStateForTF]} value'),
                         )
                       ],
                     ),
@@ -98,7 +98,8 @@ class _WeightUnitsState extends State<WeightUnits> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         DropdownMenu(
-                            textStyle: const TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
+                            textStyle: const TextStyle(
+                                fontSize: 13, fontWeight: FontWeight.w600),
                             initialSelection: _oneCurrentStateForTF,
                             onSelected: (v) {
                               _oneTEC.clear();
@@ -156,7 +157,8 @@ class _WeightUnitsState extends State<WeightUnits> {
                           color: AppColor.accentColor,
                         ),
                         DropdownMenu(
-                            textStyle: const TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
+                            textStyle: const TextStyle(
+                                fontSize: 13, fontWeight: FontWeight.w600),
                             initialSelection: _twoCurrentStateForTF,
                             onSelected: (v) {
                               _oneTEC.clear();
@@ -259,8 +261,91 @@ class _WeightUnitsState extends State<WeightUnits> {
 
   //=======================================FUNCTIONS=======================================
   void _onChangeOne(String v) {
+    switch (_oneCurrentStateForTF) {
+      case (0):
+        {
+          switch (_twoCurrentStateForTF) {
+            case (0):
+              {
+                _twoTEC.text = v;
+                break;
+              }
+            case (1):
+              {
+                _twoTEC.text = '${double.parse(v) * 0.001}';
+                break;
+              }
+            case (2):
+              {
+                _twoTEC.text = '${double.parse(v) * 0.000001}';
+                break;
+              }
+            case (3):
+              {
+                _twoTEC.text = '${double.parse(v) * 0.000000001}';
+                break;
+              }
+            case (4):
+              {
+                _twoTEC.text = '${double.parse(v) * 0.0000000022046226218487757}';
+                break;
+              }
+            case (5):
+              {
+                _twoTEC.text = '${double.parse(v) * 0.00000003527396195}';
+                break;
+              }
+            case (6):
+              {
+                _twoTEC.text = '${double.parse(v) * 0.00000003215074657}';
+                break;
+              }
+            case (7):
+              {
+                _twoTEC.text = '${double.parse(v) * 0.00001543235835294143}';
+                break;
+              }
+            case (8):
+              {
+                _twoTEC.text = '${double.parse(v) * 0.000000000001}';
+                break;
+              }
+            case (9):
+              {
+                _twoTEC.text = '${double.parse(v) * 0.0000000009842065}';
+                break;
+              }
+            case (10):
+              {
+                _twoTEC.text = '${double.parse(v) * 0.000000000001102311310924198}';
+                break;
+              }
+            case (11):
+              {
+                _twoTEC.text = '${double.parse(v) * 0.00000000015728647}';
+                break;
+              }
+            case (12):
+              {
+                _twoTEC.text = '${double.parse(v) * 0.00000000001968415130040558}';
+                break;
+              }
+            case (13):
+              {
+                _twoTEC.text = '${double.parse(v) * 0.000005}';
+                break;
+              }
+          }
+        }
+    }
   }
 
-  void _onChangeTwo(v) {
+  void _onChangeTwo(v) {}
+
+  @override
+  void dispose() {
+    _twoTEC.dispose();
+    _oneTEC.dispose();
+    super.dispose();
   }
 }

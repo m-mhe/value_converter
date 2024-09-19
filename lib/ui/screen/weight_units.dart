@@ -287,7 +287,8 @@ class _WeightUnitsState extends State<WeightUnits> {
               }
             case (4):
               {
-                _twoTEC.text = '${double.parse(v) * 0.0000000022046226218487757}';
+                _twoTEC.text =
+                    '${double.parse(v) * 0.0000000022046226218487757}';
                 break;
               }
             case (5):
@@ -317,7 +318,8 @@ class _WeightUnitsState extends State<WeightUnits> {
               }
             case (10):
               {
-                _twoTEC.text = '${double.parse(v) * 0.000000000001102311310924198}';
+                _twoTEC.text =
+                    '${double.parse(v) * 0.000000000001102311310924198}';
                 break;
               }
             case (11):
@@ -327,7 +329,8 @@ class _WeightUnitsState extends State<WeightUnits> {
               }
             case (12):
               {
-                _twoTEC.text = '${double.parse(v) * 0.00000000001968415130040558}';
+                _twoTEC.text =
+                    '${double.parse(v) * 0.00000000001968415130040558}';
                 break;
               }
             case (13):
@@ -336,6 +339,7 @@ class _WeightUnitsState extends State<WeightUnits> {
                 break;
               }
           }
+          break;
         }
     }
   }
